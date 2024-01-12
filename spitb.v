@@ -10,7 +10,8 @@ SPI_STATE DUT(.clk(clk),
         .datain(datain),
         .spi_cs_l(spi_cs_l),
         .spi_clk(spi_clk),
-        .spi_data(spi_data));
+        .spi_data(spi_data),
+        .counter(counter));
 initial begin
     clk=1'b0;
     reset=1'b1;

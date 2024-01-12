@@ -16,7 +16,7 @@ always@(posedge clk or posedge reset)
 if(reset)
 begin
   MOSI<=16'd0;
-  count<=16;
+  count<=5'd16;
   cs_l<=1'b1;
   sclk<=1'b0;
 end
@@ -42,7 +42,7 @@ begin
     state<=1;
     else
     begin
-      count<=16;
+      count<=5'd16;
       state<=0;
     end
   end
